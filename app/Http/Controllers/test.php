@@ -13,8 +13,17 @@ use Dropbox\Client;
 
 class test extends Controller
 {
-    $client = new Client($accessToken, $appSecret);
-	$adapter = new DropboxAdapter($client, [$prefix]);
+	function __construct() {
+		$client = new Client($accessToken, $appSecret);
+		$adapter = new DropboxAdapter($client, [$prefix]);
+		$filesystem = new Filesystem($adapter);
+	}
 
-	$filesystem = new Filesystem($adapter);
+	public function index() {
+
+	}
+
+	public function dropbox() {
+
+	}
 }

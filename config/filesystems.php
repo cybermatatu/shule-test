@@ -80,6 +80,12 @@ return [
             'url_type'  => 'publicURL',
         ],
 
+        'dropbox' => [
+            'driver' => 'dropbox',
+            'accessToken' => '',
+            'app' => 'blogx',
+        ],
+
     ],
 
 ];
