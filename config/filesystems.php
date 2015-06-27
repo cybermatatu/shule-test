@@ -83,7 +83,7 @@ return [
         'dropbox' => [
             'driver' => 'dropbox',
             'accessToken' => '',
-            'app' => 'blogx',
+            'app' => '',
         ],
 
     ],
