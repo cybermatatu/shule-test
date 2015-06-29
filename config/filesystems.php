@@ -79,16 +79,6 @@ return [
             'region'    => 'IAD',
             'url_type'  => 'publicURL',
         ],
-<<<<<<< HEAD
-=======
-
-        'dropbox' => [
-            'driver' => 'dropbox',
-            'accessToken' => '',
-            'app' => '',
-        ],
-
->>>>>>> 0b2ae9fee4a28ad537a1a60e3046a1d4a6dd6353
     ],
 
 ];
