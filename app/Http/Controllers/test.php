@@ -8,6 +8,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use Storage;
+use Flysystem;
 
 //use League\Flysystem\Filesystem;
 
@@ -29,6 +30,7 @@ class test extends Controller
 
 		if(Storage::disk('s3')->exists($file2)) {
 			echo 'File Exists';
+			Flysystem::put('hi.txt', 'This is a test');
 			//echo Storage::size($file);
 
 		} else {
