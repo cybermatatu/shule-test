@@ -7,23 +7,33 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-use League\Flysystem\Dropbox\DropboxAdapter;
-use League\Flysystem\Filesystem;
-use Dropbox\Client;
+use Storage;
+
+//use League\Flysystem\Filesystem;
+
 
 class test extends Controller
 {
 	function __construct() {
-		$client = new Client($accessToken, $appSecret);
-		$adapter = new DropboxAdapter($client, [$prefix]);
-		$filesystem = new Filesystem($adapter);
+		
 	}
 
 	public function index() {
 
 	}
 
-	public function dropbox() {
+	public function s3() {
 
+		$file = 'desert.jpg';
+		$file2 = 'demo/desert.jpg';
+
+		if(Storage::disk('s3')->exists($file2)) {
+			echo 'File Exists';
+			//echo Storage::size($file);
+
+		} else {
+			echo 'Doesnt exist';
+			Storage::copy($file, $file2);
+		}
 	}
 }

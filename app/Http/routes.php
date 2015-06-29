@@ -15,6 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('storage/dropbox', [
-    'as' => 'dropbox', 'uses' => 'test@dropbox'
+Route::get('storage/s3', [
+    'as' => 's3', 'uses' => 'test@s3'
 ]);

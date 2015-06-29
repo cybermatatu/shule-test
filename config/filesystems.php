@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'default' => 'local',
+    'default' => 's3',
 
     /*
     |--------------------------------------------------------------------------
@@ -64,10 +64,10 @@ return [
 
         's3' => [
             'driver' => 's3',
-            'key'    => 'your-key',
-            'secret' => 'your-secret',
-            'region' => 'your-region',
-            'bucket' => 'your-bucket',
+            'key'    => env('S3_KEY', 'Your S3 KEY'),
+            'secret' => env('S3_SECRET', 'Your S3 SECRET'),
+            'region' => env('S3_REGION', 'Your S3 REGION'),
+            'bucket' => env('S3_BUCKET', 'Your S3 BUCKET'),
         ],
 
         'rackspace' => [
@@ -79,13 +79,6 @@ return [
             'region'    => 'IAD',
             'url_type'  => 'publicURL',
         ],
-
-        'dropbox' => [
-            'driver' => 'dropbox',
-            'accessToken' => '',
-            'app' => 'blogx',
-        ],
-
     ],
 
 ];
