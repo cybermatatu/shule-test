@@ -1,2 +1,2 @@
 # shule-test
-Shulemoja test repo
+Shulemoja Laravel 5.1 test repo - Just testing script
