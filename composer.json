@@ -15,7 +15,8 @@
         "graham-campbell/flysystem": "^3.0",
         "league/flysystem-ziparchive": "~1.0",
         "graham-campbell/digitalocean": "~2.0",
-        "guzzlehttp/guzzle": "^6.0"
+        "guzzlehttp/guzzle": "^6.0",
+        "irazasyed/laravel-gamp": "^1.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

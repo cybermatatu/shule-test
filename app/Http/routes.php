@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::get('storage/s3', [
     'as' => 's3', 'uses' => 'test@s3'
 ]);
+
+Route::get('google/analytics',[
+	'as' => 'analytics', 'uses' => 'test@analytics'
+]);

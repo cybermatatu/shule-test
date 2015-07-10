@@ -10,6 +10,8 @@ use App\Http\Controllers\Controller;
 use Storage;
 use Flysystem;
 
+use GAMP;
+
 //use League\Flysystem\Filesystem;
 
 
@@ -37,5 +39,13 @@ class test extends Controller
 			echo 'Doesnt exist';
 			Storage::copy($file, $file2);
 		}
+	}
+
+	public function analytics() {
+
+		$gamp = GAMP::setClientId( '123456ABCD' );
+		$gamp->setProtocolVersion('1');
+		$gamp->setDocumentPath( '/' );
+		$gamp->sendPageview();
 	}
 }

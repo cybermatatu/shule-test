@@ -138,6 +138,7 @@ return [
         Illuminate\View\ViewServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
         GrahamCampbell\Flysystem\FlysystemServiceProvider::class,
+        Irazasyed\LaravelGAMP\LaravelGAMPServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -195,6 +196,7 @@ return [
         'View'      => Illuminate\Support\Facades\View::class,
         'Image'     => Intervention\Image\Facades\Image::class,
         'Flysystem' => GrahamCampbell\Flysystem\Facades\Flysystem::class,
+        'GAMP'  => Irazasyed\LaravelGAMP\Facades\GAMP::class,
 
     ],
 
